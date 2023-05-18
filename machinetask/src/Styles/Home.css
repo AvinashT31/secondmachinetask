@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar{
+    border: 1px solid black;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+}
+
+.navitem{
+    border: 1px solid black;
+    width: 8%;
+    height: 8vh;
+    margin-top: 1vh;
+}
+
+.navitem p{
+    margin-top: 13%;
+    cursor: pointer;
+}
+
+
+
+
+
