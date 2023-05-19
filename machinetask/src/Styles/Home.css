@@ -4,34 +4,21 @@
     box-sizing: border-box;
 }
 
-#navbar{
-    /* border: 1px solid black; */
+#homefullpage{
+    border: 1px solid black;
     width: 100%;
-    height: 10vh;
-    display: flex;
-    background-color: grey;
+    height: 100vh;
 }
 
-.navitem{
-    /* border: 1px solid black; */
+#homepage{
+    border: 1px solid black;
     width: 8%;
-    height: 8vh;
-    margin-top: 1vh;
-    color: white;
-    font-weight: 550;
-    font-size: 18px;
+    height: 40px;
+    position: relative;
+    top: 2%;
+    left: 3%;
 }
 
-.navitem:hover{
-    background-color: black;
+#homepage p{
+    margin-top: 8%;
 }
-
-.navitem p{
-    margin-top: 13%;
-    cursor: pointer;
-}
-
-
-
-
-

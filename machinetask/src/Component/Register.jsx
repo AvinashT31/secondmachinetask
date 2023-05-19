@@ -56,12 +56,12 @@ const Register = () => {
         <div id='registerfullpage'>
             <form>
                 <label>Username</label>
-                <input onChange={(e) => handleclick(e)} name='username' value={registerData.username} type="text" placeholder='' />
+                <input onChange={(e) => handleclick(e)} name='username' value={registerData.username} type="email" placeholder='' />
                 <br />
                 <label>Password</label>
                 <input onChange={(e) => handleclick(e)} name='password' value={registerData.password} style={{ position: "relative", left: "9%" }} type="password" placeholder='' />
                 <br />
-                <button onClick={Register}>Register</button>
+                <button onClick={(e) =>Register(e)}>Register</button>
                 <button onClick={openloginpage}>login</button>
             </form>
         </div>
