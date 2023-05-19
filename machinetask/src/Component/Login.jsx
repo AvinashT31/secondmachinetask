@@ -29,6 +29,7 @@ const Login = () => {
     if(flag){
       localStorage.setItem("currentuser", JSON.stringify(currentuser));
       setloginData({ username: "", password: "" });
+      route('/home')
       alert("login successfully")
     }
     else{

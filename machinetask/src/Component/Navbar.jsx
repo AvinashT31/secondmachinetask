@@ -6,23 +6,22 @@ const Navbar = () => {
 
     const route = useNavigate();
 
-    function openloginpage(){
+    function openloginpage() {
         route('/login');
     }
 
-    function openhomepage(){
+    function openhomepage() {
 
         var DataFromLS = JSON.parse(localStorage.getItem("currentuser"));
         console.log(DataFromLS, "DataFromLS");
 
-        if(DataFromLS.username){
-            route('/home');    
+        if (DataFromLS) {
+            route('/home');
         }
-        else{
+        else {
             alert("login first");
+            // route('/login');
         }
-
-        
     }
     return (
         <div>
