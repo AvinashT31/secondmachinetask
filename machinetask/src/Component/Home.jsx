@@ -1,7 +1,14 @@
 import React from 'react'
 import '../Styles/Home.css';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+
+    const route = useNavigate();
+
+    function openloginpage(){
+        route('/register')
+    }
     return (
         <div>
             <div id='navbar'>
@@ -14,10 +21,9 @@ const Home = () => {
                 <div class='navitem'>
                     <p>Task</p>
                 </div>
-                <div class='navitem'>
-                    <p>USer</p>
+                <div onClick={openloginpage} class='navitem'>
+                    <p>User</p>
                 </div>
-
             </div>
         </div>
     )
