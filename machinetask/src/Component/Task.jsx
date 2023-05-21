@@ -15,11 +15,11 @@ const Task = () => {
   return (
     <div id='taskfullpage'>
       <div id='taskpage'>
-          {todoData && todoData.map((e) => (
-            <div id='task'>
+          {todoData && todoData.map((e,i ) => (
+            <div id='task' key={i}>
               <p>{e.id}</p>
              <p>{e.title}</p>
-             <p>{e.completed}</p> 
+             {e.completed ? (<p>True</p>) : (<p>False</p>)} 
              <button>Delete</button>
             </div>
           ))}
