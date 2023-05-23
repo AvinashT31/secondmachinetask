@@ -51,6 +51,10 @@ const Login = () => {
     route('/register');
   }
 
+  function changepass(){
+    route('/forgetpassword');
+  }
+
   
   return (
     <div id='Loginfullpage'>
@@ -61,7 +65,7 @@ const Login = () => {
         <label>Password</label>
         <input style={{ position: "relative", left: "9%" }} onChange={(e) => handlclick(e)} name='password' value={loginData.password} type="password" placeholder='' />
         <br />
-        <button>Change Password</button>
+        <button onClick={changepass}>Change Password</button>
         <button onClick={(e) =>login(e)}>Login</button>
         <button onClick={(e) => singlepage(e)}>Register</button>
       </form>

@@ -10,6 +10,10 @@ const Navbar = () => {
         route('/login');
     }
 
+    function taskpage(){
+        route('/task');
+    }
+
     function openhomepage() {
 
         var DataFromLS = JSON.parse(localStorage.getItem("currentuser"));
@@ -32,7 +36,7 @@ const Navbar = () => {
                 <div onClick={openhomepage} class='navitem'>
                     <p>Home</p>
                 </div>
-                <div class='navitem'>
+                <div onClick={taskpage} class='navitem'>
                     <p>Task</p>
                 </div>
                 <div onClick={openloginpage} class='navitem'>

@@ -6,6 +6,7 @@ import Register from './Component/Register';
 import Login from './Component/Login';
 import Home from './Component/Home';
 import Task from './Component/Task';
+import Forgetpass from './Component/Forgetpass';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path='/task' element={<Task/>}></Route>
         <Route exact path='/register' element={<Register/>}></Route>
         <Route exact path='/login' element={<Login/>}></Route>
+        <Route exact path='/forgetpassword' element={<Forgetpass/>}></Route>
 
       </Routes>
     </div>
